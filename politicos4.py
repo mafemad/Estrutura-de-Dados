@@ -2,9 +2,9 @@ import requests
 
 gastos = {}
 
-for x in range(1,23):
+for x in range(1,44):
 
-    url = "https://dadosabertos.camara.leg.br/api/v2/deputados/204534/despesas?pagina="+ str(x) + "&itens=15"
+    url = "https://dadosabertos.camara.leg.br/api/v2/deputados/204534/despesas?ano=2023&ordem=ASC&ordenarPor=ano&pagina="+ str(x) + "&itens=15"
     dados = requests.get(url).json()
     
 
